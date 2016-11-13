@@ -1,4 +1,4 @@
-require_relative '../schwad.rb'
+require_relative 'helpers'
 module Schwad::Models
   class Page < Base
   end
