@@ -1,6 +1,8 @@
 ruby do
   require 'rubygems'
   require 'camping'
+  require 'activerecord'
+  require 'markaby'
   Camping.goes :Schwad
   require 'schwad/helpers'
   require 'schwad/models'
