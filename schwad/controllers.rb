@@ -11,4 +11,8 @@ module Schwad::Controllers
       render page_name
     end
   end
+
+  class RenderPartial
+    def get; render :_partial; end
+  end
 end

@@ -1,17 +1,6 @@
-require 'markaby'
-#Sets Up Markaby
-
-mab = Markaby::Builder.new
-
-#Info
-@post_date = Date.parse("2016-11-13")
-
-mab.div do
-  #Title
-
+def one_post
   h2 "Another year of code..... Or is it?"
-
-  #Body
+  em "206-11-13"
 
   p "Well, it looks like it's time for me to write you another communication. This
   one is a sample communication, though, that I am manually writing in an .rb file
@@ -31,8 +20,6 @@ mab.div do
 
   br
 
-  strong "Crosses fingers"
+  strong
+    "Crosses fingers"
 end
-
-ALL_POSTS ||= Hash.new
-ALL_POSTS[@post_date] = mab
